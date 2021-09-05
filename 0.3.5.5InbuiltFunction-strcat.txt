@@ -1,0 +1,41 @@
+#include <iostream>
+#include<cstring> //for all inbuilt functions 
+using namespace std;
+
+void mystrcat(char str1[], char str2[]){
+    int lencount = strlen(str2)+strlen(str1);
+    int j = 0;
+    for(int i = strlen(str1); i<lencount;i++){
+        str1[i]=str2[j];
+        j++;
+    } 
+}
+
+int main() {
+    // 5.inbuilt strcat(str1,str2) start
+        //char str1[100]="abcd";
+        //char str2[100]="xy";
+        //cout<<"Before Copy"<<endl;
+        //cout<<"str1 "<<str1<<endl;
+        //cout<<"str2 "<<str2<<endl;
+        //strcat(str1,str2);//concates str2 after str1
+        ////strcat(str1,"Hello");//"Hello" to str1
+        //cout<<"After Copy"<<endl;
+        //cout<<"str1 "<<str1<<endl;
+        //cout<<"str2 "<<str2<<endl;
+    // 5. strcat(str1,str2) end
+    
+    // 5.manual strcat(str1,str2) start
+        char str1[100]="abcd";
+        char str2[100]="xy";
+        cout<<"Before Copy"<<endl;
+        cout<<"str1 "<<str1<<endl;
+        cout<<"str2 "<<str2<<endl;
+        mystrcat(str1,str2);//concates str2 after str1
+        cout<<"After Copy"<<endl;
+        cout<<"str1 "<<str1<<endl;
+        cout<<"str2 "<<str2<<endl;
+    // 5.manual strcat(str1,str2) end
+    
+    return 0;
+}

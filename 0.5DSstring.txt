@@ -1,0 +1,46 @@
+    //getline(cin,s3);
+    //cout<<s3<<endl;
+    
+    // we can treat string like an array
+    s3 = "abcd";
+    cout<<s3[1]<<endl;
+    s3[0]='d';
+    cout<<s3<<endl;
+    
+    // we can add two strings
+    string s4 = "";//initially empty
+    
+    //s4 = s3+s2+" hello"+" cding"; // this '+' is working as concatenation operator
+    //we can also write like this
+    s4 += s3+s2+" hello cding";//s4=s4+s3+s2+" hello cding"
+    cout<<s2<<endl;
+    cout<<s3<<endl;
+    cout<<s4<<endl;
+    //this is the power of string class, we can add multiple strings
+    
+    //we also have function size/length
+    cout<<s4.size()<<endl;
+    cout<<s4.length()<<endl;
+    //both gives same output
+    
+    //new function substr(from index,limit(optional))
+    cout<<s4.substr(3)<<endl;
+    //substr will print fron the given index to the last and it doesn't change the original string but returns a new string 
+    cout<<s4.substr(3,6)<<endl;
+    //will print 6 indexes starting from index 3
+    string s5=s4.substr(3,9);// storing substr data into a new string
+    cout<<s5<<endl;
+    //new function find(string)
+    string s6 = "lksjdfabcabcalpha";
+    cout<<s6<<endl;
+    cout<<s6.find('abc')<<endl;//location f abc in string s6
+    //new function to_string
+    int a = 123;
+    string s7 = to_string(a);
+    cout<<s7<<endl;
+    //we can change values of s7 as well. let, s7[1]='c';
+    s7[1]='c';
+    cout<<s7<<endl;
+    
+    return 0;
+}

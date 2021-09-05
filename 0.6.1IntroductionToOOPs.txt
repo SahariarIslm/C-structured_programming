@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+class product { //initializing Class
+    int id; // declaring properties
+    int weignt;
+    char name[50];
+}
+
+int main(){
+    return 0;
+}

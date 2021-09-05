@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class Student{
+    public: // everything below public will become public
+        int rollNumber;
+        
+    private:
+        int age;
+        
+    public:
+    
+    void display(){
+        cout <<age<<" "<<rollNumber<<endl;
+    }
+    
+    int getAge(){
+        return age;
+    }
+    void setAge(){
+        age = a;
+    }
+};

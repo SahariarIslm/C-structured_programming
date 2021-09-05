@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout << "before swap a= "<<a<<" and b= "<<b<< endl;
+    /* //using 3 variables
+    int temp = a;
+    a=b;
+    b=temp;
+    cout << "after swap a= "<<a<<" and b= "<<b<< endl; 
+    */
+    /* //using xor
+    a= a^b;
+    b= a^b;
+    a= a^b;
+    */
+    //using swap builtin method
+    swap(a,b);
+    cout << "after swap a= "<<a<<" and b= "<<b<< endl;
+    return 0;
+}

@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char name[100];
+    cout<<"Enter your name : ";
+    // cin>>name; // try input "hello world" for cin
+    // cin.getline(name,4);
+    cin.getline(name,100,'o'); // 3rd option 'o' is break at o
+    cout<<"Your name is : "<< name <<endl; 
+    return 0;
+}

@@ -1,0 +1,36 @@
+#include <iostream> //<for builtin>
+#include "student.cpp"//<for created>
+using namespace std;
+
+int main(){
+    // Creating Object Statically
+    Student S1;
+    Student S2;
+    Student S3,S4,S5;
+    
+    // Creating Object Dynamically
+    Student *S6 = new Student;
+    
+    //Statically inserting into objects property
+    // S1.age = 24;
+    S1.rollNumber = 100;
+    
+    S1.display();
+    S2.display();
+    
+    cout<<"S1 age: "<<S1.getAge()<<endl;
+    cout<<"S2 age: "<<S2.getAge()<<endl;
+    
+    //Statically accessing property from objects
+    //cout<<S1.age<<endl;
+    cout<<S1.rollNumber<<endl;
+    //Dynamically inserting data into objects property
+    //(*S6).age = 26;
+    (*S6).rollNumber = 30;
+    (*S6).display();
+        /*we also can write*/
+    //S6->age  = 26;
+    S6->rollNumber  = 30;
+    S6->display();
+    return 0;
+}

@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Student { //initializing Class
+    // declaring properties
+    int id // by default access modifire is private
+    public: // everything below public will become public
+        int rollNumber;
+        int age;
+};
+
+int main(){
+    // Creating Object Statically
+    Student S1;
+    Student S2;
+    Student S3,S4,S5;
+    
+    // Creating Object Dynamically
+    Student *S6 = new Student;
+    
+    //Statically inserting into objects property
+    S1.age = 24;
+    S1.rollNumber = 100;
+    
+    //Statically accessing property from objects
+    cout<<S1.age<<endl;
+    cout<<S1.rollNumber<<endl;
+    //Dynamically inserting data into objects property
+    (*S6).age = 26;
+    (*S6).rollNumber = 30;
+        /*we also can write*/
+    S6->age  = 26;
+    S6->rollNumber  = 30;
+    return 0;
+}  

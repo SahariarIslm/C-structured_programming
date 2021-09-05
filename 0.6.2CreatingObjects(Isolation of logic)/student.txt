@@ -1,0 +1,5 @@
+class Student{
+    public: // everything below public will become public
+        int rollNumber;
+        int age;
+};
